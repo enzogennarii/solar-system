@@ -6,7 +6,7 @@ import SolarSystem from './components/SolarSystem';
 class App extends Component {
   render() {
     return (
-      <main>
+      <main className="App">
         <Header />
         <SolarSystem />
         <Missions />
