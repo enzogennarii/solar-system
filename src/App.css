@@ -1,3 +1,129 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: Ubuntu , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url('./images/background.png');
+}
+
 .App {
+  margin: 3rem auto;
   text-align: center;
+  width: 100vw;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 12rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.title-page {
+  font-size: 5rem;
+  margin: auto;
+}
+
+.solar-system {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 1rem;
+}
+
+.planets {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.planet-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  transition-duration: 0.7s;
+  width: 15rem;
+}
+
+.planet-card:hover {
+  cursor: grab;
+  transform: scale(2);
+}
+
+.planet-name {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.planet-img {
+  width: 40%;
+}
+
+.missions-section {
+  align-items: center;
+  background-color: rgb(255, 255, 255, 5%);
+  border: 1px solid white;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.missions {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.mission-card {
+  background-color: rgb(255, 255, 255, 10%);
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 19rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  width: 40rem;
+}
+
+.mission-name {
+  border: 1px solid white;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.mission-info {
+  align-items: center;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-evenly;
+  text-decoration: underline;
 }
